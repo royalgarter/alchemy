@@ -1,0 +1,40 @@
+import LANGUAGE from "../Language/language";
+
+class ElementNode {
+  constructor(element, parrent, coordinates) {
+    this.node = document.createElement("li");
+    this.element = element;
+    this.parrent = parrent;
+    this.coordinates = coordinates ? coordinates : false;
+  }
+
+  setParams() {
+    this.node.dataset.id = this.element.name+"$";
+    this.node.classList.add("library__item");
+    const locale = LANGUAGE.locale ? LANGUAGE.locale : "name";
+    this.node.textContent = this.element[locale];
+
+    this.node.style.backgroundImage = `url(${this.element.img})`;
+
+    if (this.isElementFinal()) this.node.classList.add("library__item--last");
+
+    if (this.coordinates) {
+      this.node.dataset._id = new Date().getTime();
+      this.node.style.zIndex = 9999;
+      this.node.style.position = 'absolute';
+      this.node.style.left = `${this.coordinates.x}px`;
+      this.node.style.top = `${this.coordinates.y}px`;
+    }
+  }
+
+  isElementFinal() {
+    return this.element.final
+  }
+
+  appendElement() {
+    this.setParams();
+    this.parrent.appendChild(this.node);
+  }
+}
+
+export default ElementNode;
