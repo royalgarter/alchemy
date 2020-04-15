@@ -95,7 +95,8 @@ class Menu {
     location.reload()
   }
 
-  hintHandler() {
+  hintHandler(e) {
+    e.target.blur();
     new Hint(this.library).show();
   }
 
