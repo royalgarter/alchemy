@@ -10,7 +10,7 @@ class Elements {
     this[id] = {};
     this[id].id = id;
     this[id].name = name;
-    this[id].img = `./assets/images/${name.toLowerCase().replace(/[ ]/g,"-")}.${imgExt}`;
+    this[id].img = `./images/${name.toLowerCase().replace(/[ ]/g,"-")}.${imgExt}`;
     this[id].final = final ? true : false;
     this[id].ukr = ukr;
     this[id].ru = ru;

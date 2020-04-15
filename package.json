@@ -3,12 +3,16 @@
   "version": "1.0.0",
   "author": "Seruf",
   "description": "alchemy game",
+  "homepage": "https://github.com/Seruf-Che/alchemy",
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack --mode development",
     "build": "cross-env NODE_ENV=production webpack --mode production",
     "start": "cross-env NODE_ENV=development webpack-dev-server --mode development --open",
-    "stats": "cross-env NODE_ENV=development webpack --mode production --json > stats.json && webpack-bundle-analyzer stats.json"
+    "stats": "cross-env NODE_ENV=production webpack --mode production --json > stats.json && webpack-bundle-analyzer stats.json",
+    "stats-dev": "cross-env NODE_ENV=development webpack --mode development --json > stats.json && webpack-bundle-analyzer stats.json",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": "> 0.25%, not dead",
   "license": "ISC",
@@ -24,6 +28,7 @@
     "eslint": "^6.8.0",
     "eslint-loader": "^4.0.0",
     "file-loader": "^6.0.0",
+    "gh-pages": "^2.2.0",
     "html-webpack-plugin": "^4.2.0",
     "less": "^3.11.1",
     "less-loader": "^5.0.0",

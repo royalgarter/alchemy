@@ -91,6 +91,10 @@ module.exports = {
         to: "assets/"
       },
       {
+        from: "images/",
+        to: "images/"
+      },
+      {
         from: "fonts/",
         to: "fonts/"
       }
