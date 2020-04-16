@@ -48,6 +48,11 @@ LANGUAGE.addString("menu__hint", {
   ukr: "Отримати підсказку",
   ru: "Получить подсказку",
 });
+LANGUAGE.addString("menu__hidefinallabel", {
+  null: "Show final elements in the list",
+  ukr: "Показувати кінцеві елементи у списку",
+  ru: "Показывать конечные элементы в списке"
+});
 LANGUAGE.addString("got_it", {
   null: "Got it",
   ukr: "Зрозумів",

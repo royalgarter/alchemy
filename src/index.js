@@ -1,4 +1,4 @@
-import "./styles/sass.sass";
+import "./styles/style.scss";
 
 import Library from "./js/Library/library";
 import Save from "./js/Save/save";

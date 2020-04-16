@@ -11,12 +11,15 @@ class Menu {
     this.savegameNode = Menu.getNode(".menu__savegame");
     this.hintNode = Menu.getNode(".menu__hint");
     this.languageNode = document.querySelector(".menu__language");
+    this.hideFinalLabelNode = Menu.getNode(".menu__hidefinallabel");
+    this.hideFinalNode = document.querySelector(".menu__hidefinal");
     Menu.setDefaultLanguage();
     this.setHandlers();
   }
 
   static getNode(selector) {
-    const button = document.querySelector(selector), stringsName = selector.slice(1);
+    const button = document.querySelector(selector),
+          stringsName = selector.slice(1);
     button.textContent = LANGUAGE.strings[stringsName][LANGUAGE.locale];
     return button;
   }
@@ -100,6 +103,12 @@ class Menu {
     new Hint(this.library).show();
   }
 
+  finalHandler(e) {
+    const checked = e.target.checked;
+    checked ? this.library.showFinalElements():
+              this.library.hideFinalElements();
+  }
+
   setHandlers() {
     this.resetNode
       .addEventListener("click", (e)=> this.resetHandler(e));
@@ -111,6 +120,8 @@ class Menu {
       .addEventListener("click", (e)=> this.hintHandler(e));
     this.languageNode
       .addEventListener("change", (e)=> Menu.languageHandler(e));
+    this.hideFinalNode
+      .addEventListener("change", (e) => this.finalHandler(e));
   }
 }
 

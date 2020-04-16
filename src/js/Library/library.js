@@ -5,6 +5,7 @@ import LANGUAGE from "../Language/language";
 class Library {
   constructor(save) {
     this.save = save;
+    this.isFinalElementsHide = false;
     this.node = document.querySelector(".library__list");
     this.list = save.record ? save.record : [...ELEMENTS.defaultElements];
     this.counter = {
@@ -20,21 +21,25 @@ class Library {
     counter.textContent = `${content} ${this.counter.count}/${Object.keys(ELEMENTS).length}`;
     counter.classList.add("library__heading");
     this.node.appendChild(counter);
-    this.incrementCounter();
   }
 
-  incrementCounter() {
-    this.counter.count++;
+  setCounter(number) {
+    this.counter.count = number;
   }
 
   updateDOM() {
     this.clearNode();
     this.sortList();
+    const listLength = this.list.length;
+    this.setCounter(listLength);
+
     this.addCounterNode();
     this.save.updateRecord(this.list);
 
     for (let i = 0; i < this.list.length; i++) {
-      new ElementNode(this.list[i], this.node).appendElement();
+      if (!(this.isFinalElementsHide && this.list[i].final)) {
+        new ElementNode(this.list[i], this.node).appendElement();
+      }
     }
   }
 
@@ -56,6 +61,16 @@ class Library {
   add(id) {
     if (this.isElementExists(id)) return;
     this.list.push(ELEMENTS.getElementById(id));
+    this.updateDOM();
+  }
+
+  hideFinalElements() {
+    this.isFinalElementsHide = true;
+    this.updateDOM();
+  }
+
+  showFinalElements() {
+    this.isFinalElementsHide = false;
     this.updateDOM();
   }
 }
