@@ -379,7 +379,7 @@ ELEMENTS.add("Thread$Thread$", "Rope", "png", "Мотузка", "Веревка"
 ELEMENTS.add("Thread$Tool$", "Fabric", "png", "Тканина", "Ткань");
 ELEMENTS.add("Tobacco$Wood$", "Pipe", "png", "Трубка", "Трубка");
 ELEMENTS.add("Fish$Tool$", "Fishing rod", "png", "Вудка", "Удочка");
-ELEMENTS.add("Tool$Wood$", "Wheel", "png", "Рульове колесо", "Рулевое колесо");
+ELEMENTS.add("Tool$Wood$", "Wheel", "png", "Колесо", "Колесо");
 ELEMENTS.add("Wall$Wood$", "Fence", "png", "Забір", "Забор");
 ELEMENTS.add("Chicken$Water$", "Chicken soup", "png", "Курячий суп", "Куриный суп", "final");
 ELEMENTS.add("Leaf$Water$", "Tea", "png", "Чай", "Чай");
