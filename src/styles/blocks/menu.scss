@@ -44,8 +44,11 @@
     background-color: $color-confirm;
   }
 
-  &__hidefinallabel {
+  &__hidefinal-wrapper {
+    margin-top: 10px;
+    margin-bottom: 20px;
     font-size: 12px;
+    line-height: 1;
   }
 
   &__language {

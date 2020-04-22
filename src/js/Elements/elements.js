@@ -299,7 +299,7 @@ ELEMENTS.add("Hay$Tool$", "Pitchfork", "png", "Вила", "Вилы", "final");
 ELEMENTS.add("Light$Tool$", "Flashlight", "png", "Ліхтарик", "Фонарик", "final");
 ELEMENTS.add("Metal$Tool$", "Armor", "png", "Броня", "Броня");
 ELEMENTS.add("Rain$Tool$", "Umbrella", "png", "Парасолька", "Зонтик");
-ELEMENTS.add("Tool$Tree$", "Wood", "png", "Дерево", "Дерево");
+ELEMENTS.add("Tool$Tree$", "Wood", "png", "Колода", "Бревно");
 ELEMENTS.add("Family$Tree$", "Family tree", "png", "Сімейне дерево", "Семейное дерево", "final");
 ELEMENTS.add("Fire$Tree$", "Charcoal", "png", "Вугілля", "Уголь");
 ELEMENTS.add("House$Tree$", "Treehouse", "png", "Будинок на дереві", "Дом на дереве", "final");
