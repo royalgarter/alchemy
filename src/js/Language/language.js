@@ -50,8 +50,8 @@ LANGUAGE.addString("menu__hint", {
 });
 LANGUAGE.addString("menu__hidefinallabel", {
   null: "Show final elements in the list",
-  ukr: "Показувати кінцеві елементи у списку",
-  ru: "Показывать конечные элементы в списке"
+  ukr: "Показувати елементи що не комбінються",
+  ru: "Показывать некомбинируемые элементы"
 });
 LANGUAGE.addString("got_it", {
   null: "Got it",

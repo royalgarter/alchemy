@@ -1,0 +1,9 @@
+.link {
+  color: $color-accent;
+  text-decoration: none;
+  transition: $transition;
+
+  &:hover {
+    color: $color-heading;
+  }
+}

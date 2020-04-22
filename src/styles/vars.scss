@@ -1,24 +1,28 @@
-/*Colors*/
-//$color-content: #000000;
-$color-bg: rgba(255, 255, 255, 1);
-$color-bg-alt: rgba(245, 245, 219, 1);
-$color-bg-button: rgba(245, 245, 219, 0.36);
-//$color-accent: #5863f8;
-//$color-heading: #000000;
-//$color-heading-alt: #ffffff;
-//@color-bg-alt: #ffffff;
-//@color-bg-modal: rgba(0,0,0,0.6);
-$color-border: rgba(0, 0, 0, 1);
-$color-border-inactive: rgba(0, 0, 0, 0.5);
-//$color-header: #ffffff;
+/*BASE COLORS*/
+$c-bg: rgb(255, 255, 255);
+$c-bg-alt: rgb(237, 237, 237);
+$c-content: rgb(53, 53, 53);
+$c-content-alt: rgb(40, 75, 99);
+$c-accent: rgb(60, 110, 113);
+$c-confirm: rgb(0, 255, 0);
+$c-alert: rgb(255, 0, 0);
+/*COLORS*/
+$color-content: $c-content;
+$color-accent: $c-accent;
+$color-heading: $c-content-alt;
+$color-bg: $c-bg;
+$color-bg-alt: $c-bg-alt;
+$color-bg-button: rgba($c-bg-alt, 0.5);
+$color-border: $c-content;
+$color-border-inactive: rgba($color-border, 0.5);
+$color-modal-shadow: rgba($c-accent, 0.6);
+$color-confirm: rgba($c-confirm, 0.1);
+$color-alert: rgba($c-alert, 0.5);
 
-$color-confirm: rgba(0, 255, 0, 0.2);
-$color-alert: rgba(255, 0, 0, 0.5);
 
-$color-modal-shadow: rgba(0, 0, 0, 0.5);
 
 /*Fonts*/
-$font-content: "Roboto", sans-serif;
+$font-family: "Roboto", sans-serif;
 $font-size: 14px;
 
 /*Other*/

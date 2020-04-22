@@ -186,7 +186,7 @@ ELEMENTS.add("Blade$Gun$", "Bayonet", "png", "Штик", "Штык", "final");
 ELEMENTS.add("Electricity$Gun$", "Taser", "png", "Електрошокер", "Электрошокер", "final");
 ELEMENTS.add("Gunpowder$Wire$", "Dynamite", "png", "Динаміт", "Динамит", "final");
 ELEMENTS.add("Hay$Hay$", "Hay bale", "png", "Стіг сіна", "Стог сена", "final");
-ELEMENTS.add("Gold$House$", "Bank", "png", "Банку", "Банка", "final");
+ELEMENTS.add("Gold$House$", "Bank", "png", "Банк", "Банк", "final");
 ELEMENTS.add("Hay$House$", "Barn", "png", "Амбар", "Амбар");
 ELEMENTS.add("Bacteria$Human$", "Sickness", "png", "Хвороба", "Болезнь");
 ELEMENTS.add("Bird$Human$", "Angel", "png", "Янгол", "Ангел");

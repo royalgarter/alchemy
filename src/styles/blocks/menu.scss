@@ -17,10 +17,10 @@
     width: 150px;
     height: auto;
     min-height: 40px;
-    border: 2px solid #000;
+    border: 2px solid $color-border;
     border-radius: 4px;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: $font-family;
     font-size: 12px;
     background-color: $color-bg-button;
     transition: $transition;
@@ -46,5 +46,21 @@
 
   &__hidefinallabel {
     font-size: 12px;
+  }
+
+  &__language {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    width: 150px;
+    height: auto;
+    min-height: 40px;
+    border: 2px solid $color-border;
+    border-radius: 4px;
+    text-align: center;
+    font-family: $font-family;
+    font-size: 12px;
+    background-color: $color-bg-button;
+    transition: $transition;
   }
 }
