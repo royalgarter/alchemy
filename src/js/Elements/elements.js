@@ -432,7 +432,7 @@ ELEMENTS.add("Alcohol$Human$", "Drunk", "png", "П'яний", "Пьяный", "f
 ELEMENTS.add("Boat$Human$", "Sailor", "png", "Моряк", "Моряк");
 ELEMENTS.add("Broom$Human$", "Witch", "png", "Відьма", "Ведьма", "final");
 ELEMENTS.add("Campfire$Human$", "Story", "png", "Історія", "История");
-ELEMENTS.add("Fishing rod$Human$", "Angler", "png", "Морський рис", "Морской черт", "final");
+ELEMENTS.add("Fishing rod$Human$", "Angler", "png", "Рибалка", "Рибак", "final");
 ELEMENTS.add("Flour$Human$", "Baker", "png", "Пекар", "Пекарь");
 ELEMENTS.add("Human$Meat$", "Butcher", "png", "М'ясник", "Мясник", "final");
 ELEMENTS.add("Cold$Juice$", "Popsicle", "png", "Ескімо", "Эскимо", "final");
