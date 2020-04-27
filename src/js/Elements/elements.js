@@ -496,7 +496,7 @@ ELEMENTS.add("Bee$Flower$", "Honey", "png", "Мед", "Мед", "final");
 ELEMENTS.add("Bee$House$", "Beehive", "png", "Вулик", "Улей");
 ELEMENTS.add("Bicycle$Energy$", "Motorcycle", "png", "Мотоцикл", "Мотоцикл", "final");
 ELEMENTS.add("Bicycle$Human$", "Cyclist", "png", "Велосипедист", "Велосипедист", "final");
-ELEMENTS.add("Blade$Pumpkin$", "Jack-o'-lantern", "png", "Гарбуз-ліхтар", "Тыква-фонарь", "final");
+ELEMENTS.add("Blade$Pumpkin$", "Jack-o-lantern", "png", "Гарбуз-ліхтар", "Тыква-фонарь", "final");
 ELEMENTS.add("Armor$Car$", "Tank", "png", "Танк", "Танк", "final");
 ELEMENTS.add("Car$Car$", "Bus", "png", "Автобус", "Автобус", "final");
 ELEMENTS.add("Car$Electricity$", "Electric car", "png", "Електромобіль", "Электромобиль", "final");
