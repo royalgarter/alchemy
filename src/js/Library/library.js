@@ -18,7 +18,7 @@ class Library {
   addCounterNode() {
     const counter = document.createElement("h2");
     const content = LANGUAGE.strings["elements"][LANGUAGE.locale];
-    counter.textContent = `${content} ${this.counter.count}/${Object.keys(ELEMENTS).length}`;
+    counter.textContent = `${content} ${this.counter.count}/${Object.keys(ELEMENTS).length-1}`;
     counter.classList.add("library__heading");
     this.node.appendChild(counter);
   }
