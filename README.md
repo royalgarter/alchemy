@@ -1,7 +1,7 @@
 # Alchemy
 
 ###### Description
-You are starting with four basic elements (Earth, Fire, Air, and Water). Combine them to create up to 535 other elements.
+You are starting with four basic elements (Earth, Fire, Air, and Water). Combine them to create up to 534 other elements.
 
 [View Demo](https://seruf-che.github.io/alchemy/ "Alchemy game demo")
 
