@@ -4,9 +4,6 @@ class Elements {
   }
 
   add(id, name, imgExt, ukr, ru, final = false) {
-    // if (id === undefined) throw new Error(`The Element's ID was not set.`);
-
-    // if (this[id]) throw new Error(`An element with the following ID: "${id}" is already exists. Please set another ID for ${name} element`);
     this[id] = {};
     this[id].id = id;
     this[id].name = name;
